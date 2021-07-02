@@ -11,17 +11,6 @@ class UpWorkScanner:
   def __init__(self,
                upwork_account,
                headless=False):
-    profile_data = {}
-    profile_data['id'] = None
-    profile_data['account'] = None
-    profile_data['address'] = {}
-    profile_data['address']['line1'] = None
-    profile_data['address']['line2'] = None
-    profile_data['address']['city'] = None
-    profile_data['address']['state'] = None
-    profile_data['address']['postal_code'] = None
-    profile_data['address']['country'] = None
-    profile_data['phone_number'] = None
 
     # initialize pydantic based data model
     self.upwork_scarped_data = ScarpedData(address = AddressDict(), metadata=MetadataDict())
